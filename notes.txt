@@ -1,0 +1,28 @@
+>>>>>>>>>Advanced Pandas Operations such as group_by, value_counts etc
+
+In pandas, we use specific boolean operators to filter data based on multiple conditions. The operators for logical conditions are different from regular Python operators (and, or). In pandas, we use:
+
+& for AND
+| for OR
+Why the Difference?
+Pandas works with Series or DataFrame objects, not simple Python booleans. When filtering a DataFrame, you're often comparing an entire column of data. The operators & and | allow you to combine multiple conditions efficiently over the whole data set.
+
+Notes:
+Parentheses are required around each condition to avoid precedence issues.
+Using Python’s regular and and or won’t work on pandas Series; they are used for scalar booleans, not arrays.
+In summary, in pandas:
+
+& is used for combining AND conditions.
+| is used for combining OR conditions.
+
+>>>>>>>>>Data Slicing and Data manipulation
+
+
+Sorting Data, add new columns by performing operations on existing columns
+
+You can create new columns in a DataFrame by performing operations on existing columns. For example, you might want to calculate a new metric or manipulate existing data to create a new column.
+
+In Summary:
+Sorting Data: You can sort DataFrames based on one or more columns using sort_values().
+Adding New Columns: You can create new columns by performing operations (e.g., arithmetic, comparisons) on existing columns.
+These two concepts are essential for data slicing and data manipulation but were not covered in your initial code. If you need help integrating them into your current code, feel free to ask!
